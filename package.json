@@ -1,6 +1,6 @@
 {
   "name": "react-use-event-outside",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "Detect event outside",
   "main": "src/index.js",
   "scripts": {
@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/omtanke/react-use-event-outside/issues"
   },
-  "homepage": "https://github.com/omtanke/react-use-event-outside#readme"
+  "homepage": "https://github.com/omtanke/react-use-event-outside#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  }
 }
