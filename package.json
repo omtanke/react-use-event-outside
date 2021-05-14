@@ -1,6 +1,6 @@
 {
-  "name": "react-use-event-outside",
-  "version": "1.0.17",
+  "name": "@omtanke/react-use-event-outside",
+  "version": "1.0.20",
   "description": "Detect event outside",
   "main": "src/index.js",
   "scripts": {
@@ -16,13 +16,10 @@
     "outside",
     "ref"
   ],
-  "author": "semihraifgurel",
+  "author": "omtanke",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/omtanke/react-use-event-outside/issues"
   },
-  "homepage": "https://github.com/omtanke/react-use-event-outside#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  }
+  "homepage": "https://github.com/omtanke/react-use-event-outside#readme"
 }
