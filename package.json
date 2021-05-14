@@ -1,6 +1,6 @@
 {
   "name": "react-use-event-outside",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Detect event outside",
   "main": "src/index.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "keywords": [
     "react",
     "hook",
-    "outside"
+    "outside",
+    "ref"
   ],
   "author": "semihraifgurel",
   "license": "MIT",
