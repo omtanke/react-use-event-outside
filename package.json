@@ -1,6 +1,6 @@
 {
   "name": "react-use-event-outside",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Detect event outside",
   "main": "src/index.js",
   "scripts": {
