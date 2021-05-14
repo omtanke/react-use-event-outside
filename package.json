@@ -2,7 +2,7 @@
   "name": "react-use-event-outside",
   "version": "1.0.0",
   "description": "Detect event outside",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
