@@ -17,13 +17,13 @@ npm i react-use-event-outside
 Import into your component like so:
 
 ```javascript
-import useEventOutSide from 'react-use-event-outside';
+import useEventOutside from 'react-use-event-outside';
 ```
 
 ## Usage
 
 ```javascript
-useEventOutSide(REF, EVENT_NAME, FUNCTION);
+useEventOutside(REF, EVENT_NAME, FUNCTION);
 ```
 **REF**: Outside which element you want to trigger.
 
@@ -40,7 +40,7 @@ const App = () => {
         setIsOpen(false);
     }, []);
     
-    useEventOutSide(ref, 'mousedown', closeMenu);
+    useEventOutside(ref, 'mousedown', closeMenu);
     
     return (
         <nav className="dropdown" ref={ref}>
