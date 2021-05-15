@@ -1,6 +1,6 @@
 {
   "name": "@omtanke/react-use-event-outside",
-  "version": "1.0.21",
+  "version": "1.0.0",
   "description": "Detect event outside",
   "main": "src/index.js",
   "scripts": {

@@ -5,19 +5,19 @@
 Install with [Yarn](https://yarnpkg.com/):
 
 ```sh
-yarn add react-use-event-outside
+yarn add @omtanke/react-use-event-outside
 ```
 
 Or with [NPM](https://www.npmjs.com/):
 
 ```sh
-npm i react-use-event-outside
+npm i @omtanke/react-use-event-outside
 ```
 
 Import into your component like so:
 
 ```javascript
-import useEventOutside from 'react-use-event-outside';
+import useEventOutside from '@omtanke/react-use-event-outside';
 ```
 
 ## Usage
