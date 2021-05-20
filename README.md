@@ -31,6 +31,12 @@ useEventOutside(REF, EVENT_NAME, FUNCTION);
 
 **FUNCTION**: The function you want to run when triggered.
 
+### Example
+
+[CodeSandbox](https://codesandbox.io/s/useeventoutside-6gfby?file=/src/App.js)
+
+or
+
 ```javascript
 const App = () => {
     const ref = useRef(null);
