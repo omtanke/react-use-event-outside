@@ -20,8 +20,6 @@ Import into your component like so:
 import useEventOutside from '@omtanke/react-use-event-outside';
 ```
 
-TypeScript types are included, no extra `@types` package needed.
-
 ## Usage
 
 ```javascript
@@ -31,7 +29,27 @@ useEventOutside(REF, EVENT_NAME, FUNCTION);
 
 **EVENT_NAME**: You want to listen to the event (Ex: 'mousedown', 'touchstart', etc.).
 
-**FUNCTION**: The function you want to run when triggered.
+**FUNCTION**: The function you want to run when triggered. It receives the DOM event as its only argument.
+
+Works with server-side rendering (Next.js, Remix, etc.): the listener is only attached in the browser.
+
+### TypeScript
+
+Types are bundled. Known event names give you a typed event:
+
+```tsx
+const ref = useRef<HTMLDivElement>(null);
+
+useEventOutside(ref, 'mousedown', (event) => {
+    // event is a MouseEvent
+    console.log(event.clientX, event.clientY);
+});
+
+useEventOutside(ref, 'keydown', (event) => {
+    // event is a KeyboardEvent
+    if (event.key === 'Escape') close();
+});
+```
 
 ### Example
 
