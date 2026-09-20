@@ -37,17 +37,23 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     env:
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # setup-node fills an empty NODE_AUTH_TOKEN with a placeholder, so check the secret separately
+      HAS_NPM_TOKEN: ${{ secrets.NPM_TOKEN != '' }}
     steps:
+      - name: Skip npmjs.org publish
+        if: env.HAS_NPM_TOKEN != 'true'
+        run: echo "::warning::NPM_TOKEN secret is not set, skipping npmjs.org publish"
       - uses: actions/checkout@v4
+        if: env.HAS_NPM_TOKEN == 'true'
       - uses: actions/setup-node@v4
+        if: env.HAS_NPM_TOKEN == 'true'
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org/
       - run: npm ci
+        if: env.HAS_NPM_TOKEN == 'true'
       - name: Publish to npmjs.org
-        if: env.NODE_AUTH_TOKEN != ''
+        if: env.HAS_NPM_TOKEN == 'true'
         run: npm publish --access public
-      - name: Skip npmjs.org publish
-        if: env.NODE_AUTH_TOKEN == ''
-        run: echo "::warning::NPM_TOKEN secret is not set, skipping npmjs.org publish"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
