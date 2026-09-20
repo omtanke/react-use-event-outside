@@ -20,6 +20,8 @@ Import into your component like so:
 import useEventOutside from '@omtanke/react-use-event-outside';
 ```
 
+TypeScript types are included, no extra `@types` package needed.
+
 ## Usage
 
 ```javascript
