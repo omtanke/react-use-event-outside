@@ -2,20 +2,21 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Only the latest release on npm receives security fixes.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| latest  | :white_check_mark: |
+| older   | :x:                |
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+Please do not open a public issue for security problems.
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Report vulnerabilities privately through GitHub's
+[Report a vulnerability](https://github.com/omtanke/react-use-event-outside/security/advisories/new)
+form. If that form is not available, contact the package maintainer listed on
+[npm](https://www.npmjs.com/package/@omtanke/react-use-event-outside).
+
+You can expect an initial response within a week. Confirmed issues are fixed in
+a new release and credited in the release notes unless you prefer otherwise.
